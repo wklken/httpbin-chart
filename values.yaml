@@ -7,12 +7,13 @@ replicaCount: 1
 
 image:
   # -- Image repository
-  repository: mccutchen/go-httpbin
+  # repository: mccutchen/go-httpbin
+  repository: kennethreitz/httpbin
   # -- Image pull policy
   pullPolicy: IfNotPresent
   # -- Image tag
   # @default -- chart appVersion
-  tag: ""
+  tag: latest
 
 # -- Specify docker-registry secret names as an array
 imagePullSecrets: []
@@ -52,7 +53,7 @@ service:
 
 ingress:
   # -- Specifies whether the ingress should be created
-  enabled: false
+  enabled: true
   # -- Ingress class name
   className: ""
   # -- Annotations to add to the ingress

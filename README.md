@@ -1,8 +1,24 @@
 # httpbin-chart
 
+NOTE: this is a fork from [matheusfm/httpbin-chart](https://github.com/matheusfm/httpbin-chart), but change the image from `mccutchen/go-httpbin` to the official `kennethreitz/httpbin`
+
+install
+
+```
+$ git clone https://github.com/wklken/httpbin-chart.git
+$ cd httpbin-chart
+$ helm install httpbin .
+```
+
+(will support helm repo add later)
+
+------------------
+
+
 ![Version: 0.1.1](https://img.shields.io/badge/Version-0.1.1-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: v2.3.0](https://img.shields.io/badge/AppVersion-v2.3.0-informational?style=flat-square)
 
 Helm chart to install [httpbingo.org](https://httpbingo.org) on Kubernetes
+
 
 ## Installing the Chart
 
