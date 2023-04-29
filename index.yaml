@@ -3,6 +3,25 @@ entries:
   httpbin:
   - apiVersion: v2
     appVersion: v2.3.0
+    created: "2023-04-29T00:32:00.922226681Z"
+    description: Helm chart to install httpbingo.org on Kubernetes
+    digest: aa98d1e1d1396e809eb9fe57e5ade9f74aea53310a091eafbda3bf4f15ed06f1
+    keywords:
+    - httpbin
+    maintainers:
+    - email: matheusfaria.moraes@gmail.com
+      name: Matheus Moraes
+      url: https://matheusfm.dev
+    name: httpbin
+    sources:
+    - https://github.com/matheusfm/httpbin-chart
+    - https://github.com/mccutchen/go-httpbin
+    type: application
+    urls:
+    - https://github.com/wklken/httpbin-chart/releases/download/httpbin-0.1.2/httpbin-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
+    appVersion: v2.3.0
     created: "2022-03-04T14:35:31.813433347-03:00"
     description: Helm chart for install httpbin.org on Kubernetes
     digest: f8c41f37e7affb600c60b59e0ecdfc3ffffd406ac886e34126dd2d765ee209a2
@@ -20,4 +39,4 @@ entries:
     urls:
     - https://wklken.me/httpbin-chart/httpbin-0.1.1.tgz
     version: 0.1.1
-generated: "2022-03-04T14:35:31.812769286-03:00"
+generated: "2023-04-29T00:32:00.922236281Z"
