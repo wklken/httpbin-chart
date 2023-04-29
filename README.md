@@ -2,20 +2,10 @@
 
 NOTE: this is a fork from [matheusfm/httpbin-chart](https://github.com/matheusfm/httpbin-chart), but change the image from `mccutchen/go-httpbin` to the official `kennethreitz/httpbin`
 
-install
-
-```
-$ git clone https://github.com/wklken/httpbin-chart.git
-$ cd httpbin-chart
-$ helm install httpbin .
-```
-
-(will support helm repo add later)
-
-------------------
 
 
-![Version: 0.1.1](https://img.shields.io/badge/Version-0.1.1-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: v2.3.0](https://img.shields.io/badge/AppVersion-v2.3.0-informational?style=flat-square)
+
+
 
 Helm chart to install [httpbingo.org](https://httpbingo.org) on Kubernetes
 
@@ -25,15 +15,24 @@ Helm chart to install [httpbingo.org](https://httpbingo.org) on Kubernetes
 To install the chart with the release name `httpbin`:
 
 ```console
-$ helm repo add matheusfm https://matheusfm.dev/charts
-$ helm install httpbin matheusfm/httpbin
+$ helm repo add wklken https://wklken.me/httpbin-chart/
+$ helm install httpbin wklken/httpbin
+```
+
+or install from repo
+
+
+```
+$ git clone https://github.com/wklken/httpbin-chart.git
+$ cd httpbin-chart
+$ helm install httpbin .
 ```
 
 These commands deploy [httpbin](https://httpbingo.org) on the Kubernetes cluster in the default configuration.
 The [Parameters](#parameters) section lists the parameters that can be configured during installation.
 
 > **Tips:**
-> - List all charts available in `matheusfm` repo using `helm search repo matheusfm`
+> - List all charts available in `wklken` repo using `helm search repo wklken`
 > - List all releases using `helm list`
 
 ## Uninstalling the Chart
@@ -88,13 +87,13 @@ Specify each parameter using the `--set key=value[,key=value]` argument to `helm
 
 ```console
 $ helm install httpbin \
-  --set service.port=8080 matheusfm/httpbin
+  --set service.port=8080 wklken/httpbin
 ```
 
 Alternatively, a YAML file that specifies the values for the parameters can be provided while installing the chart. For example,
 
 ```console
-$ helm install httpbin -f values.yaml matheusfm/httpbin
+$ helm install httpbin -f values.yaml wklken/httpbin
 ```
 
 > **Tip**: You can use the default [values.yaml](values.yaml)
