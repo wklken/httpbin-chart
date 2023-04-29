@@ -24,5 +24,6 @@ jobs:
         with:
           charts_dir: ./
           config: cr.yaml
+          charts_repo_url: https://wklken.github.io/httpbin-chart
         env:
           CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
