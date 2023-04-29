@@ -20,23 +20,4 @@ entries:
     urls:
     - https://github.com/wklken/httpbin-chart/releases/download/httpbin-0.1.2/httpbin-0.1.2.tgz
     version: 0.1.2
-  - apiVersion: v2
-    appVersion: v2.3.0
-    created: "2022-03-04T14:35:31.813433347-03:00"
-    description: Helm chart for install httpbin.org on Kubernetes
-    digest: f8c41f37e7affb600c60b59e0ecdfc3ffffd406ac886e34126dd2d765ee209a2
-    keywords:
-    - httpbin
-    maintainers:
-    - email: wklken@gmail.com
-      name: wklken
-      url: https://wklken.me/httpbin-chart/
-    name: httpbin
-    sources:
-    - https://github.com/wklken/httpbin-chart
-    - https://github.com/postmanlabs/httpbin
-    type: application
-    urls:
-    - https://wklken.me/httpbin-chart/httpbin-0.1.1.tgz
-    version: 0.1.1
 generated: "2023-04-29T00:32:00.922236281Z"
